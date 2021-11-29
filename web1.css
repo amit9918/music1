@@ -1,0 +1,287 @@
+html{
+    height: 100%;
+}
+
+body{
+font-family: 'Times New Roman', Times, serif;
+background-color: white;
+background-attachment: fixed;
+color: black;
+}
+
+.logo img {
+    border-radius: 100%;
+    height: 50px; 
+} 
+ 
+.center-X {
+    display: flex;
+    justify-content: center;
+}
+
+.language {
+    margin-left: 50px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 150px;
+}
+
+.songItemdiv {
+    width: 200px;
+    height:200px; 
+    border-radius: 5%;
+    box-shadow: 10px 10px 8px rgb(23, 78, 230);
+}
+
+.songItemdiv i{
+    padding-top: 80px;
+    display: flex; 
+   justify-content: center;
+   font-size: 40px;
+   cursor: pointer;
+}
+
+.divhover :hover{
+    color: rgb(214, 196, 196);
+}
+
+.center-Y {
+    margin-left: 18%;
+}
+
+.container-code {
+    margin: 23px auto;
+    display: right;
+    border-radius:14px;
+    padding: 20px;
+    background-image: url("gif3.gif");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position: 700px 210px;
+    background-size: 85vh;
+    height: 80vh;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 40%;
+    outline: 3px solid hsl(0, 0%, 90%);
+    border-radius: 14px;
+    margin: 18px 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 10px 10px rgb(201, 14, 117);
+    transform: rotateX(10deg);
+}
+.songItem img {
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 23px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+   margin-left:20px;
+}
+
+.timestamp :hover {
+    color: red;
+}
+
+.container-bottom {
+height: 150px;
+} 
+
+.bottom {
+    height: 120px;
+    background-color: rgb(151, 233, 226);
+    color: white;
+     display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    border-radius: 14px;
+     width: 95%;
+     margin-left: 20px;
+   /* position: fixed; 
+    top: 80vh; */
+}
+
+/* Define the slider width so that it scales properly */
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    /* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+    
+    /* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+    
+    /* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+    
+.seek_slider {
+    border-radius: 7px;
+    width: 60%;
+}
+    
+.volume_slider {
+    width: 30%;
+}
+    
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+.icons {
+    margin: 13px 0px 0px 0px;
+   
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.songinfo {
+    position: absolute;
+    left: 10vw;
+    width: 20vh;
+}
+
+.songinfo img {
+    width: 100px;
+    opacity: 0; 
+ transition: opacity 0.4s ease-in;
+}
+
+#masterSongName {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+#dark{
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.container-contact {
+    height: 40vh;
+    /* background-color: blue; */
+    justify-content: space-between;
+}
+aside {
+    width: 30%;
+    float: right;
+    font-size: 20px;
+   right: 10%;
+}
+.contact {
+padding-left: 50px;
+font-size: 20px;
+} 
+
+.contact :hover {
+    color: red;
+}
+
+.followme :hover {
+    color: red;
+}
+
+.button {
+  height: 35px;
+  box-shadow: 5px 5px 4px 0px white;
+}
+
+@media (max-width: 1000px) {
+    .songItem{
+      width: 97%;
+      height: 60px;
+        display: flex;
+        margin-left: 0px;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .container-code{
+        height: 82vh;
+        background-position: 600px 70px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .songinfo{
+        margin-top: 0px;
+        left: 5vw;
+    }
+}
+ 
+@media screen and (max-width: 1000px) {
+    .current-time,.icons,.slider_container{
+        margin-left: 90px;
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+} 
+
+@media screen and (max-width: 1000px) {
+    aside{
+        width: 100%;
+        padding-left: 50px;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+  }

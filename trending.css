@@ -1,0 +1,205 @@
+html{
+    height: 100%;
+}
+
+body{
+font-family: 'Times New Roman', Times, serif;
+/* background-color: rgb(52, 96, 219); */
+  /* background-image: url("41.jpg"); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+background-attachment: white;
+color: black;
+}
+
+.logo img {
+    border-radius: 100%;
+    height: 50px; 
+} 
+
+.center-X {
+    display: flex;
+    justify-content: center;
+}
+
+#dark{
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.tranding {
+    margin-top: 20px;
+}
+
+aside{
+    width: 48%;
+   float: left;
+}
+.container-code {
+    margin-left: 20px;
+    border-radius:14px;
+    position: relative;
+    height: auto;
+}
+
+.songItem {
+    height: 50px;
+    /* width: 50%; */
+    display: flex;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    outline: 3px solid hsl(0, 0%, 90%);
+    border-radius: 14px;
+    margin: 18px 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 10px 10px rgb(201, 14, 117);
+    transform: rotateX(10deg);
+}
+
+.songItem img {
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 23px;
+    transition: opacity 0.4s ease-in;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+   margin-left:20px;
+   /* color: red; */
+}
+
+.timestamp :hover {
+    color: red;
+}   
+
+.bottom {
+    height: auto;
+    width:40%;
+    /* margin-top: 200px; */
+    float: right;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 14px;
+    position: fixed; 
+    top: 25vh; 
+    right: 10vh;
+}
+
+/* Define the slider width so that it scales properly */
+
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+    /* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: rgb(209, 64, 228);
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+    
+    /* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(34, 0, 230);
+    cursor: pointer;
+    border-radius: 50%;
+}
+    
+    /* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+    
+.seek_slider {
+    width: 60%;
+    border-radius: 7px;
+}
+    
+.volume_slider {
+    width: 30%;
+}
+    
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+.icons {
+    margin: 13px 0px 0px 0px;
+   
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.songinfo {
+    position: relative;
+    background-image: url("alogo.jpg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.songinfo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
+    opacity: 0; 
+ transition: opacity 0.4s ease-in;
+}
+
+#masterSongName {
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    animation: mymove 5s;
+    color: rgb(247, 14, 14);
+   overflow: hidden;
+}
+
+@media screen and ( max-width: 800px){
+aside{
+    width: 100%;
+     height: auto;
+}
+.bottom{
+    margin-top: 25px;
+    /* left:50px; */
+    width: 100%;
+    position:sticky;
+}
+}
